@@ -11,7 +11,6 @@
 # 10. How have global sales trended over the years?
 # 11. Are there any notable years with a significant increase or decrease in sales?
 # 12. Which publisher has the highest total global sales?
-# 13. Are there any publishers dominating specific regions?
 
 # Solution 
 # Firstly, activate the packages for data manipulation and data visualization
