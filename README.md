@@ -18,3 +18,34 @@ Based on the VG Sales dataset from Kaggle, This dataset includes the following v
 8.  JP_Sales: The sales of the game in Japan, measured in millions of copies sold.
 9.  Other_Sales: The sales of the game in other regions, measured in millions of copies sold.
 10. Global_Sales: The total worldwide sales, which is the sum of sales from all regions.
+
+# Problem Statement
+1.  What are the top 5 best-selling games globally?
+2.  How do the global sales compare across genres?
+3.  Which platform has the highest sales in North America?
+4.  What are the top 3 genres in Europe based on sales?
+5.  Are there any noticeable differences in genre popularity between Japan and other regions?
+6.  Which platform has shown the highest average global sales?
+7.  How does the total sales for older platforms (e.g., PS2, NES) compare to newer ones (e.g., PS4, XOne)?
+8.  What is the most popular genre in terms of global sales?
+9.  Are there any genres that are consistently underperforming in all regions?
+10. How have global sales trended over the years?
+11. Are there any notable years with a significant increase or decrease in sales?
+12. Which publisher has the highest total global sales?
+13. Are there any publishers dominating specific regions?
+14. Create a bar chart showing the total sales for the top 5 platforms globally.
+
+# Analytical tools required
+1. Microsoft Excel
+2. R Studio
+
+# Operation performed
+1. Data organizing (Excel)
+2. Data cleaning (Excel)
+3. Data transformation (Excel)
+4. Data manipulation (R)
+5. Data visualization (R)
+
+# R packages used
+1. dplyr: Used for data manipulation
+2. ggplot2: Used for data visualization
