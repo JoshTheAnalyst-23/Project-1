@@ -32,8 +32,7 @@ Based on the VG Sales dataset from Kaggle, This dataset includes the following v
 10. How have global sales trended over the years?
 11. Are there any notable years with a significant increase or decrease in sales?
 12. Which publisher has the highest total global sales?
-13. Are there any publishers dominating specific regions?
-14. Create a bar chart showing the total sales for the top 5 platforms globally.
+
 
 # Analytical tools required
 1. Microsoft Excel
