@@ -10,7 +10,7 @@ The VG Sales Dataset on Kaggle contains data on video game sales, including vari
 Based on the VG Sales dataset from Kaggle, This dataset includes the following variables or fields;
 1.  Name: The title of the video game.
 2.  Platform: The platform on which the game was released (e.g., PlayStation, Xbox, PC, Nintendo).
-3.  Year_Of_Release: The year the game was released.
+3.  Year: The year the game was released.
 4.  Genre: The genre of the game (e.g., Action, Adventure, Shooter, RPG, etc.).
 5.  Publisher: The company or individual that published the game.
 6.  NA_Sales: The sales of the game in North America, measured in millions of copies sold.
