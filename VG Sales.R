@@ -5,12 +5,11 @@
 #  4. What are the top 3 genres in Europe based on sales?
 #  5. Are there any noticeable differences in genre popularity between Japan and other regions?
 #  6. Which platform has shown the highest average global sales?
-#  7. How does the total sales for older platforms (e.g., PS2, NES) compare to newer ones (e.g., PS4, XOne)?
-#  8. What is the most popular genre in terms of global sales?
-#  9. Are there any genres that are consistently underperforming in all regions?
-# 10. How have global sales trended over the years?
-# 11. Are there any notable years with a significant increase or decrease in sales?
-# 12. Which publisher has the highest total global sales?
+#  7. What is the most popular genre in terms of global sales?
+#  8. Are there any genres that are consistently underperforming in all regions?
+#  9. How have global sales trended over the years?
+# 10. Are there any notable years with a significant increase or decrease in sales?
+# 11. Which publisher has the highest total global sales?
 
 # Solution 
 # Firstly, activate the packages for data manipulation and data visualization
@@ -104,7 +103,7 @@ Platform_Sales <- VgSales %>% group_by(Platform = VgSales$Platform) %>% summaris
   arrange(desc(Average_Sales)) %>% head(1)
 View(Platform_Sales)
 
-# Question 8
+# Question 7
 Globe <- Games %>% mutate(Genre = fct_reorder(Genre, Globally))
 Global_Sales <- ggplot(data = Globe, mapping = aes(x = Globally, y = Genre)) + geom_bar(stat = "identity",
                                                                                     fill = "darkblue",
@@ -112,7 +111,7 @@ Global_Sales <- ggplot(data = Globe, mapping = aes(x = Globally, y = Genre)) + g
   labs(title = "Global Sales", x = "Sales", y = "Genre") + theme_minimal()
 distinct
 
-# Question 9
+# Question 8
 # Based on the analysis from Question 5, the visuals show that the strategy genre consistently underperforms in four out of the five regions
 
 # Question 10 
@@ -137,7 +136,7 @@ Trend_Overtime <- ggplot(data = Trendz_Overyears, mapping = aes(x = Years, y = T
        y = "Sales") +
   theme_minimal() 
 
-# Question 11 
+# Question 10
 # Step one (Checking for NA values)
 sum(is.na(VgSales$Year))
 sum(is.na(VgSales$Global_Sales))
@@ -167,7 +166,7 @@ ggplot(sales_by_year, aes(x = Year, y = Total_Sales, group = 1)) +
 
 # Conclusion: From the line chart above, the sales of the game were at their highest in 2008 and at their lowest from 2017 to 2020, consecutively.
 
-# Question 12
+# Question 11
 Sales_By_Publisher <- select(VgSales,Publisher,Global_Sales)
 Sales_By_Publisher <- Sales_By_Publisher  %>% group_by(Publisher) %>% summarise(Total = sum(Global_Sales)) %>%
   arrange(desc(Total)) %>% head(10)
